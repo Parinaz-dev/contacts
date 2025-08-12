@@ -35,16 +35,13 @@ body {
     width: 100%;
 }
 
-
 ul {
     list-style-type: none;
 }
 
-
 li {
     font-size: 20px;
 }
-
 
 .mini-form {
     display: flex;
