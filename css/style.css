@@ -21,7 +21,13 @@ body {
     display: flex;
     align-items: center;
     background-color: #3dbdad;
+    position: relative;
 }
+
+.add-member {
+    width: 100%;
+}
+
 .search-member svg {
     width: 30px;
 }
@@ -45,12 +51,28 @@ li {
 
 .mini-form {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    opacity: 0;
+    position: absolute;
+}
+.info input {
+    height: 40px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
 
-
-
-
-
+.img-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.img-info svg {
+    width: 30px;
+}
 
