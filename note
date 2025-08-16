@@ -1,1 +1,11 @@
-#b4e9e8
+let person1 =  "name" ;
+let phone1 = "number";
+let name1 = "pari";
+let mainphone = 5204405744;
+
+const jadid = {
+[person1] : name1 , 
+[phone1] : mainphone };
+
+
+console.log(jadid);
