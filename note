@@ -7,5 +7,39 @@ const jadid = {
 [person1] : name1 , 
 [phone1] : mainphone };
 
-
 console.log(jadid);
+
+const p = document.createElement("p");
+p.innerText = "سلام";
+document.body.appendChild(p);
+
+const name = document.createElement("span");
+name.innerText = "che khabar ?";
+document.body.appendChild(name);
+
+var list = document.createElement("ul"); 
+list.innerHTML = "<li>pari</li> <li>masii</li>";
+document.body.appendChild(list);
+
+
+let list1 = document.createElement("ul");
+let li1 = document.createElement("li");
+
+li1.textContent = "roya";
+
+let li2 = document.createElement("li");
+li2.textContent = "raha";
+list1.appendChild(li1);
+list1.appendChild(li2);
+
+document.body.appendChild(list1);
+
+
+const btn = document.createElement("button");
+btn.textContent = "کلیک کن";
+btn.addEventListener("click" , function() {
+  alert("hello how are you ?");
+  return;
+});
+
+document.body.appendChild(btn);
