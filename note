@@ -8,19 +8,20 @@ const jadid = {
 [phone1] : mainphone };
 
 console.log(jadid);
+///////////////////
 
 const p = document.createElement("p");
 p.innerText = "سلام";
 document.body.appendChild(p);
-
+///////////////////////
 const name = document.createElement("span");
 name.innerText = "che khabar ?";
 document.body.appendChild(name);
-
+///////////////////////////////
 var list = document.createElement("ul"); 
 list.innerHTML = "<li>pari</li> <li>masii</li>";
 document.body.appendChild(list);
-
+//////////////////////
 
 let list1 = document.createElement("ul");
 let li1 = document.createElement("li");
@@ -34,7 +35,7 @@ list1.appendChild(li2);
 
 document.body.appendChild(list1);
 
-
+//////////////////////
 const btn = document.createElement("button");
 btn.textContent = "کلیک کن";
 btn.addEventListener("click" , function() {
@@ -43,3 +44,18 @@ btn.addEventListener("click" , function() {
 });
 
 document.body.appendChild(btn);
+/////////////
+
+var dokme = document.createElement("button");
+dokme.textContent = "click me";
+
+dokme.addEventListener("click" , function() {
+  dokme.textContent = "thanks";
+
+setTimeout(function() {
+  dokme.remove();
+},1000);
+});
+
+document.body.appendChild(dokme);
+////////////////////
