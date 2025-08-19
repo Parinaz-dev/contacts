@@ -59,3 +59,28 @@ setTimeout(function() {
 
 document.body.appendChild(dokme);
 ////////////////////
+
+const link = document.createElement("a");
+
+link.textContent = "https://my.irancell.ir/";
+link.setAttribute("href" , "https://my.irancell.ir/");
+
+link.addEventListener("click" , function(event) {
+  event.preventDefault();
+console.log(link.getAttribute("href"));
+})
+document.body.appendChild(link);
+//////////////////////
+
+const btn = document.createElement("button");
+const link = document.createElement("a");
+btn.textContent = "click me";
+link.textContent = "https://www.bahesab.ir/time/today/";
+link.setAttribute("href" , "https://www.bahesab.ir/time/today/");
+btn.addEventListener("click" , function() {
+  link.setAttribute("href" , "https://irantahsil.org/%DA%86%D8%A7%D8%B1%D8%AA-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D9%88%D8%A7%D8%AD%D8%AF-%D8%B1%D8%B4%D8%AA%D9%87-%D9%BE%D8%B2%D8%B4%DA%A9%DB%8C/");
+  console.log(link.getAttribute("href"));
+})
+
+document.body.append(btn , link);
+///////////////////////
