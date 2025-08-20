@@ -24,7 +24,7 @@ body {
     position: relative;
 }
 
-.add-member {
+#adding {
     width: 100%;
 }
 
@@ -32,7 +32,7 @@ body {
     width: 30px;
 }
 
-.add-member svg {
+#adding svg {
     width: 30px;
 }
 

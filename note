@@ -84,3 +84,30 @@ btn.addEventListener("click" , function() {
 
 document.body.append(btn , link);
 ///////////////////////
+
+var person = {
+  name : "pari",
+  age : 22,
+  isstudent : true,
+  hoobies : ["music" , "coding" , "reading"]
+}
+
+console.log(person.hoobies[person.hoobies.length - 1]);
+
+//////////////////
+
+var person = {
+  name : "pari",
+  age : 22,
+  hoobies : ["music" , "coding" , "reading"],//array 
+  address : { //object
+    city : "alborz",
+    zip : 41,
+  },
+  sayhello : function() { //function
+    console.log(`hi my name is , ${person.name}`);
+    return;
+  }
+};
+
+console.log(person.sayhello());
