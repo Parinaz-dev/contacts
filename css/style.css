@@ -80,3 +80,13 @@ li {
 .img-info svg {
     width: 30px;
 }
+
+.s-parent {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.s-parent input {
+    height: 25px;
+}
