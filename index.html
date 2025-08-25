@@ -81,9 +81,10 @@
     var ul = document.querySelector(".final-list ul");
     var tick = document.querySelector(".tick");
     var users = [];
-    var inputs = document.querySelectorAll(".mini-form input ");
+    var inputs = document.querySelectorAll(".mini-form input");
     var search = document.querySelector(".search-member");
     var parent = document.querySelector(".s-parent");
+    var input = document.querySelectorAll(".s-parent input");
 
 
 
@@ -118,6 +119,8 @@
     search.addEventListener("click", function () {
       search.style.display = "none";
       parent.style.display = "flex";
+      let Sname = input[0].value;
+      let Snumber = input[1].value;
     })
 
 
