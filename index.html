@@ -71,6 +71,7 @@
         </div>
         <div class="search-member">
           <input class="enter-name" type="text" placeholder="جستجو" />
+          <ul class="result"></ul>
           <svg fill="black" viewBox="0 0 640 640" style="width: 35px">
             <path
               d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 
@@ -95,10 +96,11 @@
       var tick = document.querySelector(".tick");
 
       var inputs = document.querySelectorAll(".mini-form input");
-      var users = [];
+      var users = [{ name: name, phone: phone }];
 
-      var search = document.querySelector(".search-member");
+      // var search = document.querySelector(".search-member");
       var enter = document.querySelector(".enter-name");
+      var result = document.querySelector(".ul");
 
       add.addEventListener("click", function (event) {
         list.style.display = "flex";
@@ -117,19 +119,22 @@
 
         li.style.marginBottom = "20px";
         ul.appendChild(li);
-        
-        users.push({
-          name: name,
-          phone: phone,
-        });
+
+        // users.push({
+        //   name: name,
+        //   phone: phone,
+        // });
 
         inputs[0].value = "";
         inputs[1].value = "";
         list.style.display = "none";
       });
 
-      search.addEventListener("click", function () {
-        console.log(input.value);
+      enter.addEventListener("input", function () {
+        let value = event.target.value.toLowerCase();
+        result.innerHTML = "";
+
+        if (value === "") return;
       });
     </script>
   </body>
