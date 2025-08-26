@@ -28,8 +28,28 @@ body {
     width: 100%;
 }
 
+.add {
+    cursor: pointer;
+}
+
+.search-member {
+    position: relative;
+    height: 25px;
+}
+
+.search-member input {
+    padding-right: 30px;
+    height: 25px;
+    width: 80%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 .search-member svg {
-    width: 30px;
+    position: relative;
+    height: 20px;
+    left: 3%;
+    bottom: 25px;
 }
 
 #adding svg {
