@@ -88,6 +88,9 @@
         </div>
       </div>
     </div>
+    
+ // var search = document.querySelector(".search-member");
+
 
     <script>
       var add = document.querySelector(".add");
@@ -96,11 +99,11 @@
       var tick = document.querySelector(".tick");
 
       var inputs = document.querySelectorAll(".mini-form input");
-      var users = [{ name: name, phone: phone }];
+      var users = [];
 
-      // var search = document.querySelector(".search-member");
+     
       var enter = document.querySelector(".enter-name");
-      var result = document.querySelector(".ul");
+      var result = document.querySelector(".ul"); // یکی
 
       add.addEventListener("click", function (event) {
         list.style.display = "flex";
@@ -120,10 +123,10 @@
         li.style.marginBottom = "20px";
         ul.appendChild(li);
 
-        // users.push({
-        //   name: name,
-        //   phone: phone,
-        // });
+        users.push({
+          name: name,
+          phone: phone,
+        });
 
         inputs[0].value = "";
         inputs[1].value = "";

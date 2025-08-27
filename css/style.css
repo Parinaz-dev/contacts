@@ -24,9 +24,9 @@ body {
     position: relative;
 }
 
-#adding {
+/* #adding {
     width: 100%;
-}
+} */
 
 .add {
     cursor: pointer;
@@ -58,6 +58,7 @@ body {
 
 .mini-form svg {
     width: 40px !important; /* مشکل داره استایلش */
+    cursor: pointer;
 }
 
 .down {
