@@ -100,7 +100,7 @@
 
       // var search = document.querySelector(".search-member");
       var enter = document.querySelector(".enter-name");
-      var result = document.querySelector(".ul"); // یکی
+      var result = document.querySelector(".result"); // یکی
 
       add.addEventListener("click", function (event) {
         list.style.display = "flex";
@@ -111,8 +111,8 @@
         let phone = inputs[0].value;
         let name = inputs[1].value;
 
-        console.log("phone :", phone);
-        console.log("name :", name);
+        // console.log("phone :", phone);
+        // console.log("name :", name);
 
         let li = document.createElement("li");
         li.textContent = name + "-" + phone;
@@ -130,11 +130,21 @@
         list.style.display = "none";
       });
 
-      enter.addEventListener("input", function () {
+      enter.addEventListener("input", function (event) {
         let value = event.target.value.toLowerCase();
         result.innerHTML = "";
 
         if (value === "") return;
+
+        let filtered = users.filter((user) =>
+          user.name.toLowerCase().includes(value)
+        );
+
+        filtered.forEach((user) => {
+          let li = document.createElement("li");
+          li.textContent = user.name + " - " + user.phone;
+          result.appendChild(li);
+        });
       });
     </script>
   </body>
