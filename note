@@ -116,3 +116,62 @@ console.log(person.sayhello());
 
 
 // تو کدی که تو دادی من میخوام نتیجه رو بدون شرط های if بننویسم . فقط مسخوام روی حروفی که کاربر واردد کرده حساس باشه و نتیجه بده 
+
+
+
+
+
+
+
+
+
+
+ object : 
+
+//تسک از مرحله یک آبجکت 
+// var user = {
+// name : "pari",
+// age : 25,
+// email : "p.ebrahimi520@gmail.com"
+// }
+// console.log(user);
+// console.log(user.name);
+// console.log(user.email);
+// user.city = "alborz";
+// console.log(user);
+// delete user.age;
+// console.log(user);
+// user["favorite products"] = ["jeans" , "hat"];
+// console.log(user["favorite products"]);
+
+// تسک مرحله  2 آبجکت
+
+// let product = {
+//   id : 101,
+//   name : "laptop",
+//   price : 3000000,
+//   brand : "Dell",
+// };
+
+
+// console.log(Object.keys(product));
+// console.log(Object.values(product));
+
+// console.log(Object.entries(product));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
